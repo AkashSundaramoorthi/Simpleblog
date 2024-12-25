@@ -1,0 +1,95 @@
+<%- include("partials/header.ejs") %>
+<main>
+    <div class="container">
+    <div class="blog">
+        <div class="blog-1">
+            <div class="author">The author info</div>
+            <div class="preview">
+                <div class="text">
+                <p style="color:#af3fff;"><strong>Post title</strong></p>
+                <p>Preview title</p>
+                <p>like dont like comments</p>
+                </div>
+                <div class="img">
+                    <img src="#">
+                </div>
+            </div>
+        </div>
+        <div class="blog-1">
+            <div class="author">The author info</div>
+            <div class="preview">
+                <div class="text">
+                <p style="color:#af3fff;"><strong>Post title</strong></p>
+                <p>One custom domain dorked whole system compromiasdfasdfasdfadsfasdfasdfasdfadssed!</p>
+                <p>like dont like comments</p>
+                </div>
+                <div class="img">
+                    <img src="#">
+                </div>
+            </div>
+        </div>
+        <div class="blog-1">
+            <div class="author">The author info</div>
+            <div class="preview">
+                <div class="text">
+                <p style="color:#af3fff;"><strong>Post title</strong></p>
+                <p>Preview title</p>
+                <p>like dont like comments</p>
+                </div>
+                <div class="img">
+                    <img src="#">
+                </div>
+            </div>
+        </div>
+        <% if(title && preview) {%>
+        <div class="blog-1">
+            <div class="author"><%= author %></div>
+            <div class="preview">
+                <a href="/post1" class="blog-link">
+                <div class="text">
+                <p style="color:#af3fff;"><strong><%= title%></strong></p>
+                <p><%= preview %></p>
+                <p>like dont like comments</p>
+                </div>
+                <div class="img">
+                    <img src="#">
+                </div>
+                </a>
+            </div>
+        </div>
+        <% }else{ %>
+            <h2>End of statement.</h2>
+        <% } %>
+    </div>
+    <div class="staff">
+        <h3>Recent posts</h3>
+        <div class="recent">
+            <div class="author" style="margin-bottom: 10px;">The author info</div>
+            <p style="color:#af3fff;margin-bottom: 10px;"><strong>Post title</strong></p>
+            <p>Preview title</p>
+            <p style="margin-top: 10px;">5 days ago</p>
+        </div>
+        <div class="recent">
+            <div class="author" style="margin-bottom: 10px;">The author info</div>
+            <p style="color:#af3fff;margin-bottom: 10px;"><strong>Post title</strong></p>
+            <p>Preview title</p>
+            <p style="margin-top: 10px;">5 days ago</p>
+        </div>
+        <% if(title && preview && author) {%>
+        <div class="recent">
+            <a href="/post1" class="blog-link">
+            <div class="author" style="margin-bottom: 10px;"><%= author %></div>
+            <p style="color:#af3fff;margin-bottom: 10px;"><strong><%= title %></strong></p>
+            <p><%= preview %></p>
+            <p style="margin-top: 10px;">5 days ago</p>
+            </a>
+        </div>
+        <% }else{ %>
+            <h2>End of statement.</h2>
+        <% } %>
+        <button type="submit" class="btn btn1" name="create"><strong><a href="/write">Create blog</a></strong></button>
+    </div>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

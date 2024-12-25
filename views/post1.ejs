@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<div class="post-container">
+    <div class="post">
+        <h1><%= title %></h1>
+        <div class="author">
+            <img src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="author photo">
+            <div class="info">
+                <p class="top"><%= author %></p>
+                <p class="bottom">December 25 2024</p>
+            </div>
+        </div>
+        <div class="reactions">
+            <p>Reactions</p>
+        </div>
+        <div class="content">
+            <img src="#" alt="image of content">   
+            <pre style="white-space: pre-wrap;"><p><%= content %></p></pre> 
+        </div>
+    </div>
+</div>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="write">
+        <h1>Create post </h1>
+    <form action="/create" method="post">
+        <input type="text" name="title" class="input-field title" placeholder="Title of the post" required>
+        <input type="text" name="author" class="input-field title" placeholder="Author name" required>
+        <input type="text" name="preview" class="input-field title" placeholder="Preview text" required>
+        <textarea type="text" name="content" class="input-field title desc descr" placeholder="Content of the post" required></textarea>
+        <button type="submit" class="btn btn1"><strong>Create post</strong></button>
+    </form>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>
