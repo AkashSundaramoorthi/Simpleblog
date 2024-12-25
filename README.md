@@ -18,4 +18,4 @@ This is a simple blog application built with **Node.js** and **EJS** (Embedded J
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/AkashSundaramoorthi/Simpleblog.git
